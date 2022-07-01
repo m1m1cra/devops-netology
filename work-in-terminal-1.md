@@ -58,11 +58,11 @@ bash is /bin/bash
 
 (прочие строки могут отличаться содержимым и порядком) В качестве ответа приведите команды, которые позволили вам добиться указанного вывода или соответствующие скриншоты.
 -
-cd /tmp
-mkdir new_path_directory
-cd new_path_directory/
-sudo cp /usr/bin/bash /usr/local/bin/
-sudo cp /bin/bash /tmp/new_path_directory/
+cd /tmp;
+mkdir new_path_directory;
+cd new_path_directory;
+sudo cp /usr/bin/bash /usr/local/bin;
+sudo cp /bin/bash /tmp/new_path_directory;
 PATH=/tmp/new_path_directory/:$PATH
 
 
