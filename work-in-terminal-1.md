@@ -32,7 +32,7 @@
 
 
 В каких сценариях использования применимы скобки {} и на какой строчке man bash это описано?
-Данные скобки применяются в составных командах, описано на 174 строке man bash
+- Данные скобки применяются в составных командах, описано на 174 строке man bash
 
   Compound Commands
        A compound command is one of the following.  In most cases a list in a command's description may be separated from the rest of the command by one or more newlines, and may be followed by a newline in place of a semicolon.
@@ -42,7 +42,7 @@
               served word is permitted to be recognized.  Since they do not cause a word break, they must be separated from list by whitespace or another shell metacharacter.
 
 С учётом ответа на предыдущий вопрос, как создать однократным вызовом touch 100000 файлов? Получится ли аналогичным образом создать 300000? Если нет, то почему?
-Создать 100000 файлов можно командой  touch {1..100000}
+- Создать 100000 файлов можно командой  touch {1..100000}
 Если попытаться создать 300000 файлов, будет ошибка, так как превышено число аргументов для процессa
 
 
@@ -51,7 +51,7 @@
 
 
 Основываясь на знаниях о просмотре текущих (например, PATH) и установке новых переменных; командах, которые мы рассматривали, добейтесь в выводе type -a bash в виртуальной машине наличия первым пунктом в списке:
-
+-
 bash is /tmp/new_path_directory/bash
 bash is /usr/local/bin/bash
 bash is /bin/bash
