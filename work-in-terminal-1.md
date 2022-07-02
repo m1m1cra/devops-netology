@@ -47,7 +47,27 @@
 
 
 В man bash поищите по /\[\[. Что делает конструкция [[ -d /tmp ]]
--Данная конструкция возвращает true, если папка /tmp is exists, и false, если нет. Пример - [[ -d /tmp ]] && echo "folder is exists"
+-Данная конструкция возвращает true, если папка /tmp is exists, и false, если нет. Так, как в / папка tmp существует, вернется true (1) .
+Пример - [[ -d /tmp ]] && echo "folder is exists"
+avdeevan@bhdevops:/$  [[ -d /tmp ]] && echo "folder is exists"
+folder is exists
+avdeevan@bhdevops:/$
+
+или другой пример: создал скрипт, выдающий вывод по результату работу данной функции
+-
+avdeevan@bhdevops:~/scripts$ cat scr
+if [[ -d /tmp ]]
+then
+    echo "/tmp существует"
+else
+    echo "/tmp не существует"
+fi
+avdeevan@bhdevops:~/scripts$ ./scr
+**/tmp существует**
+avdeevan@bhdevops:~/scripts$
+
+
+
 
 
 Основываясь на знаниях о просмотре текущих (например, PATH) и установке новых переменных; командах, которые мы рассматривали, добейтесь в выводе type -a bash в виртуальной машине наличия первым пунктом в списке:
