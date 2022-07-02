@@ -47,15 +47,8 @@
 
 
 В man bash поищите по /\[\[. Что делает конструкция [[ -d /tmp ]]
--Данная конструкция возвращает true, если папка /tmp is exists, и false, если нет. Так, как в / папка tmp существует, вернется true (1) .
+-Данная конструкция возвращает true, если папка tmp в корне существует, и false, если нет. Так, как в / папка tmp существует, вернется true (1) .
 
-Пример - 
-[[ -d /tmp ]] && echo "folder is exists"
-avdeevan@bhdevops:/$  [[ -d /tmp ]] && echo "folder is exists"
-folder is exists
-avdeevan@bhdevops:/$
-
-или другой пример: создал скрипт, выдающий вывод по результату работу данной функции
 -
 avdeevan@bhdevops:/scripts$ cat scr
 if [[ -d /tmp ]]
@@ -64,7 +57,7 @@ then
 else
     echo "/tmp не существует"
 fi
-avdeevan@bhdevops:~/scripts$ ./scr
+avdeevan@bhdevops:/scripts$ ./scr
 **/tmp существует**
 avdeevan@bhdevops:~/scripts$
 
