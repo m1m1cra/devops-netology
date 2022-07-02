@@ -72,6 +72,14 @@ avdeevan@bhdevops:~/scripts$
 
 
 
+avdeevan@bhdevops:~/scripts$ ([[ -d /tmp ]])
+avdeevan@bhdevops:~/scripts$ echo $?
+0
+avdeevan@bhdevops:~/scripts$ ([[ -d /tmp2 ]])
+avdeevan@bhdevops:~/scripts$ echo $?
+1
+
+
 
 
 
