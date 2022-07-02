@@ -47,9 +47,18 @@
 
 
 В man bash поищите по /\[\[. Что делает конструкция [[ -d /tmp ]]
--Данная конструкция возвращает true, если папка tmp в корне существует, и false, если нет. Так, как в / папка tmp существует, вернется true (1) .
-
 -
+Данная конструкция возвращает 0 в случае наличия папки tmp в корне, и 1 - в случае отсутствия 
+
+avdeevan@bhdevops:/scripts$ ([[ -d /tmp ]])
+avdeevan@bhdevops:/scripts$ echo $?
+0
+avdeevan@bhdevops:/scripts$ ([[ -d /tmp2 ]])
+avdeevan@bhdevops:/scripts$ echo $?
+1
+
+
+
 avdeevan@bhdevops:/scripts$ cat scr
 if [[ -d /tmp ]]
 then
@@ -61,7 +70,7 @@ avdeevan@bhdevops:/scripts$ ./scr
 **/tmp существует**
 avdeevan@bhdevops:~/scripts$
 
-Данная команда [[ -d /tmp ]] возвращает истинну, или логическую 1, так как папка tmp в корне есть
+Данная команда [[ -d /tmp ]] возвращает истинну, так как папка tmp в корне есть
 
 Также, сделал следующий скрипт и вывод для демонстрации понимания работы
 avdeevan@bhdevops:~/scripts$ [[ -d /tmp ]] && echo true || echo false
@@ -72,12 +81,6 @@ avdeevan@bhdevops:~/scripts$
 
 
 
-avdeevan@bhdevops:~/scripts$ ([[ -d /tmp ]])
-avdeevan@bhdevops:~/scripts$ echo $?
-0
-avdeevan@bhdevops:~/scripts$ ([[ -d /tmp2 ]])
-avdeevan@bhdevops:~/scripts$ echo $?
-1
 
 
 
