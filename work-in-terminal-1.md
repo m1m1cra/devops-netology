@@ -50,8 +50,8 @@
 -
 Данная конструкция возвращает 0 в случае наличия папки tmp в корне, и 1 - в случае отсутствия 
 
-avdeevan@bhdevops:/scripts$  ([[ -d /tmp ]]) \n
-avdeevan@bhdevops:/scripts$  echo $?  \n
+avdeevan@bhdevops:/scripts$  ([[ -d /tmp ]]) 
+avdeevan@bhdevops:/scripts$  echo $?  
 0
 avdeevan@bhdevops:/scripts$  ([[ -d /tmp2 ]])
 avdeevan@bhdevops:/scripts$  echo $?
