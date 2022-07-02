@@ -57,7 +57,7 @@ avdeevan@bhdevops:/$
 
 или другой пример: создал скрипт, выдающий вывод по результату работу данной функции
 -
-avdeevan@bhdevops:~/scripts$ cat scr
+avdeevan@bhdevops:/scripts$ cat scr
 if [[ -d /tmp ]]
 then
     echo "/tmp существует"
