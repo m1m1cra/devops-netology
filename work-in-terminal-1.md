@@ -63,6 +63,16 @@ avdeevan@bhdevops:~/scripts$
 
 Данная команда [[ -d /tmp ]] возвращает истинну, или логическую 1, так как папка tmp в корне есть
 
+Также, сделал следующий скрипт и вывод для демонстрации понимания работы
+avdeevan@bhdevops:~/scripts$ [[ -d /tmp ]] && echo true || echo false
+true
+avdeevan@bhdevops:~/scripts$ [[ -d /QQQ ]] && echo true || echo false
+false
+avdeevan@bhdevops:~/scripts$
+
+
+
+
 
 
 Основываясь на знаниях о просмотре текущих (например, PATH) и установке новых переменных; командах, которые мы рассматривали, добейтесь в выводе type -a bash в виртуальной машине наличия первым пунктом в списке:
